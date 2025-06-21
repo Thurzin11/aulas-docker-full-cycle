@@ -13,3 +13,4 @@ FROM scratch
 COPY --from=builder /app/server /server
 
 ENTRYPOINT ["/server"]
+CMD ["/8080"]
