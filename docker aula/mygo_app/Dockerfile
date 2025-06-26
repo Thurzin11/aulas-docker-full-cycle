@@ -1,6 +1,9 @@
 # Etapa de build
 FROM golang:latest AS builder
 
+LABEL maintainer="Arthur"
+LABEL env="production"
+
 WORKDIR /app
 
 COPY . .
